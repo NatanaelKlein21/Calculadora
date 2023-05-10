@@ -2,32 +2,34 @@ from tkinter import *
 from tkinter import ttk
 from unittest import result
 
+# DEFINIÇÃO DE CORES
 preta = "#1a1919" # preta
 branca = "#feffff" # branca
 azul = "#38576b" # azul carregado
 cinzenta = "#ECEFF1" # cinzenta
 laranja = "#FFAB40" # laranja
 
+# CONFIRGURAÇÕES DA APLICAÇÃO
 janela = Tk()
 janela.title('Calculadora')
 janela.geometry('242x270')
 janela.config(bg=preta)
 
 
-
+# FRAME TELA
 frame_tela = Frame(janela, width=242, height=50, bg=azul)
 frame_tela.grid(row=0, column=0)
-
+# FRAME CORPO
 frame_corpo = Frame(janela, width=242, height=220)
 frame_corpo.grid(row=1, column=0)
 
 
 
-
+# DEFINIÇÕES
 todos_valores = ''
 valor_texto = StringVar()
 
-
+# FUNÇÃO PARA RECEBER VALORES
 def entrar_valores(event):
 
     global todos_valores
@@ -36,7 +38,7 @@ def entrar_valores(event):
     valor_texto.set(todos_valores)
 
 
-
+# FUNÇÃO PARA CALCULAR
 def calcular():
 
     global todos_valores
@@ -44,7 +46,7 @@ def calcular():
     valor_texto.set(str(resultado))
 
 
-
+# FUNÇÃO PARA LIMPAR A TELA
 def limpar_tela():
 
     global todos_valores
@@ -53,7 +55,7 @@ def limpar_tela():
 
 
 
-
+# LABEL
 app_label = Label(
     frame_tela,  
     textvariable = valor_texto, 
@@ -73,7 +75,8 @@ app_label.place(x=0, y=0)
 
 
 
-
+# BOTÕES
+# linha 1
 b_1 = Button(
     frame_corpo, 
     command = lambda: limpar_tela(),
