@@ -2,6 +2,8 @@ from tkinter import *
 from tkinter import ttk
 from unittest import result
 
+# teste
+
 cor1 = "#1a1919" # preta
 cor2 = "#feffff" # branca
 cor3 = "#38576b" # azul carregado
