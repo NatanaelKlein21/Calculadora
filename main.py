@@ -15,11 +15,11 @@ janela.config(bg=preta)
 
 
 
-frametela = Frame(janela, width=242, height=50, bg=azul)
-frametela.grid(row=0, column=0)
+frame_tela = Frame(janela, width=242, height=50, bg=azul)
+frame_tela.grid(row=0, column=0)
 
-framecorpo = Frame(janela, width=242, height=220)
-framecorpo.grid(row=1, column=0)
+frame_corpo = Frame(janela, width=242, height=220)
+frame_corpo.grid(row=1, column=0)
 
 
 
@@ -55,7 +55,7 @@ def limpar_tela():
 
 
 app_label = Label(
-    frametela,  
+    frame_tela,  
     textvariable = valor_texto, 
     width=16, 
     height=2, 
@@ -75,7 +75,7 @@ app_label.place(x=0, y=0)
 
 
 b_1 = Button(
-    framecorpo, 
+    frame_corpo, 
     command = lambda: limpar_tela(),
     text="C", 
     width=10, 
@@ -86,7 +86,7 @@ b_1 = Button(
     overrelief=RIDGE
 )
 b_2 = Button(
-    framecorpo, 
+    frame_corpo, 
     command = lambda: entrar_valores("%"),
     text="%", 
     width=3, 
@@ -97,7 +97,7 @@ b_2 = Button(
     overrelief=RIDGE
 )
 b_3 = Button(
-    framecorpo,
+    frame_corpo,
     command = lambda: entrar_valores("/"),
     text="/", 
     width=3, 
@@ -114,7 +114,7 @@ b_3.place(x=180, y=0)
 
 # linha 2
 b_4 = Button(
-    framecorpo, 
+    frame_corpo, 
     command = lambda: entrar_valores("7"),
     text="7", 
     width=3, 
@@ -127,7 +127,7 @@ b_4 = Button(
 
 
 b_5 = Button(
-    framecorpo, 
+    frame_corpo, 
     command = lambda: entrar_valores("8"),
     text="8", 
     width=3, 
@@ -138,7 +138,7 @@ b_5 = Button(
     overrelief=RIDGE
 )
 b_6 = Button(
-    framecorpo, 
+    frame_corpo, 
     command = lambda: entrar_valores("9"),
     text="9", 
     width=3, 
@@ -149,7 +149,7 @@ b_6 = Button(
     overrelief=RIDGE
 )
 b_7 = Button(
-    framecorpo, 
+    frame_corpo, 
     command = lambda: entrar_valores("*"),
     text="*", 
     width=3, 
@@ -167,7 +167,7 @@ b_7.place(x=180, y=41)
 # linha 3
 b_8 = Button(
 
-    framecorpo, 
+    frame_corpo, 
     command = lambda: entrar_valores("4"),
     text="4", 
     width=3, 
@@ -178,7 +178,7 @@ b_8 = Button(
     overrelief=RIDGE
 )
 b_9 = Button(
-    framecorpo, 
+    frame_corpo, 
     command = lambda: entrar_valores("5"),
     text="5", 
     width=3, 
@@ -190,7 +190,7 @@ b_9 = Button(
 )
 b_10 = Button(
 
-    framecorpo, 
+    frame_corpo, 
     command = lambda: entrar_valores("6"),
     text="6", 
     width=3, 
@@ -201,7 +201,7 @@ b_10 = Button(
     overrelief=RIDGE
 )
 b_11 = Button(
-    framecorpo, 
+    frame_corpo, 
     command = lambda: entrar_valores("-"),
     text="-", 
     width=3, 
@@ -219,7 +219,7 @@ b_11.place(x=180, y=82)
 
 # linha 4
 b_12 = Button(
-    framecorpo, 
+    frame_corpo, 
     command = lambda: entrar_valores("1"),
     text="1", 
     width=3, 
@@ -230,7 +230,7 @@ b_12 = Button(
     overrelief=RIDGE
 )
 b_13 = Button(
-    framecorpo, 
+    frame_corpo, 
     command = lambda: entrar_valores("2"),
     text="2", 
     width=3, 
@@ -242,7 +242,7 @@ b_13 = Button(
 )
 
 b_14 = Button(
-    framecorpo, 
+    frame_corpo, 
     command = lambda: entrar_valores("3"),
     text="3", 
     width=3, 
@@ -253,7 +253,7 @@ b_14 = Button(
     overrelief=RIDGE
 )
 b_15 = Button(
-    framecorpo, 
+    frame_corpo, 
     command = lambda: entrar_valores("+"),
     text="+", 
     width=3, 
@@ -273,7 +273,7 @@ b_15.place(x=180, y=123)
 
 
 b_16 = Button(
-    framecorpo, 
+    frame_corpo, 
     command = lambda: entrar_valores("0"),
     text="0", 
     width=10, 
@@ -284,7 +284,7 @@ b_16 = Button(
     overrelief=RIDGE
 )
 b_18 = Button(
-    framecorpo, 
+    frame_corpo, 
     command = lambda: entrar_valores("."),
     text=".", 
     width=3, 
@@ -295,7 +295,7 @@ b_18 = Button(
     overrelief=RIDGE
 )
 b_19 = Button(
-    framecorpo, 
+    frame_corpo, 
     command = lambda: calcular(),
     text="=", 
     width=3, 
