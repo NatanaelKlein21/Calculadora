@@ -2,22 +2,20 @@ from tkinter import *
 from tkinter import ttk
 from unittest import result
 
-# teste
-
-cor1 = "#1a1919" # preta
-cor2 = "#feffff" # branca
-cor3 = "#38576b" # azul carregado
-cor4 = "#ECEFF1" # cinzenta
-cor5 = "#FFAB40" # laranja
+preta = "#1a1919" # preta
+branca = "#feffff" # branca
+azul = "#38576b" # azul carregado
+cinzenta = "#ECEFF1" # cinzenta
+laranja = "#FFAB40" # laranja
 
 janela = Tk()
 janela.title('Calculadora')
 janela.geometry('242x270')
-janela.config(bg=cor1)
+janela.config(bg=preta)
 
 
 
-frametela = Frame(janela, width=242, height=50, bg=cor3)
+frametela = Frame(janela, width=242, height=50, bg=azul)
 frametela.grid(row=0, column=0)
 
 framecorpo = Frame(janela, width=242, height=220)
@@ -66,8 +64,8 @@ app_label = Label(
     anchor="e", 
     justify=RIGHT, 
     font=('Ivy 22'), 
-    bg=cor3, 
-    fg=cor2
+    bg=azul, 
+    fg=branca
 )
 
 
@@ -82,7 +80,7 @@ b_1 = Button(
     text="C", 
     width=10, 
     height=2, 
-    bg=cor4, 
+    bg=cinzenta, 
     font=('Ivy 13 bold'), 
     relief=RAISED, 
     overrelief=RIDGE
@@ -93,7 +91,7 @@ b_2 = Button(
     text="%", 
     width=3, 
     height=2, 
-    bg=cor4, 
+    bg=cinzenta, 
     font=('Ivy 13 bold'), 
     relief=RAISED, 
     overrelief=RIDGE
@@ -104,7 +102,7 @@ b_3 = Button(
     text="/", 
     width=3, 
     height=2, 
-    fg=cor5, 
+    fg=laranja, 
     font=('Ivy 13 bold'), 
     relief=RAISED, 
     overrelief=RIDGE
@@ -121,7 +119,7 @@ b_4 = Button(
     text="7", 
     width=3, 
     height=2, 
-    bg=cor4, 
+    bg=cinzenta, 
     font=('Ivy 13 bold'), 
     relief=RAISED, 
     overrelief=RIDGE
@@ -134,7 +132,7 @@ b_5 = Button(
     text="8", 
     width=3, 
     height=2, 
-    bg=cor4, 
+    bg=cinzenta, 
     font=('Ivy 13 bold'), 
     relief=RAISED, 
     overrelief=RIDGE
@@ -145,7 +143,7 @@ b_6 = Button(
     text="9", 
     width=3, 
     height=2, 
-    bg=cor4, 
+    bg=cinzenta, 
     font=('Ivy 13 bold'), 
     relief=RAISED, 
     overrelief=RIDGE
@@ -156,7 +154,7 @@ b_7 = Button(
     text="*", 
     width=3, 
     height=2, 
-    fg=cor5, 
+    fg=laranja, 
     font=('Ivy 13 bold'), 
     relief=RAISED, 
     overrelief=RIDGE
@@ -174,7 +172,7 @@ b_8 = Button(
     text="4", 
     width=3, 
     height=2, 
-    bg=cor4, 
+    bg=cinzenta, 
     font=('Ivy 13 bold'), 
     relief=RAISED, 
     overrelief=RIDGE
@@ -185,7 +183,7 @@ b_9 = Button(
     text="5", 
     width=3, 
     height=2, 
-    bg=cor4, 
+    bg=cinzenta, 
     font=('Ivy 13 bold'), 
     relief=RAISED, 
     overrelief=RIDGE
@@ -197,7 +195,7 @@ b_10 = Button(
     text="6", 
     width=3, 
     height=2, 
-    bg=cor4, 
+    bg=cinzenta, 
     font=('Ivy 13 bold'), 
     relief=RAISED, 
     overrelief=RIDGE
@@ -208,8 +206,8 @@ b_11 = Button(
     text="-", 
     width=3, 
     height=2, 
-    bg=cor4, 
-    fg=cor5, 
+    bg=cinzenta, 
+    fg=laranja, 
     font=('Ivy 13 bold'), 
     relief=RAISED, 
     overrelief=RIDGE
@@ -226,7 +224,7 @@ b_12 = Button(
     text="1", 
     width=3, 
     height=2, 
-    bg=cor4, 
+    bg=cinzenta, 
     font=('Ivy 13 bold'), 
     relief=RAISED, 
     overrelief=RIDGE
@@ -237,7 +235,7 @@ b_13 = Button(
     text="2", 
     width=3, 
     height=2, 
-    bg=cor4, 
+    bg=cinzenta, 
     font=('Ivy 13 bold'), 
     relief=RAISED, 
     overrelief=RIDGE
@@ -249,7 +247,7 @@ b_14 = Button(
     text="3", 
     width=3, 
     height=2, 
-    bg=cor4, 
+    bg=cinzenta, 
     font=('Ivy 13 bold'), 
     relief=RAISED, 
     overrelief=RIDGE
@@ -260,8 +258,8 @@ b_15 = Button(
     text="+", 
     width=3, 
     height=2, 
-    bg=cor4, 
-    fg=cor5, 
+    bg=cinzenta, 
+    fg=laranja, 
     font=('Ivy 13 bold'), 
     relief=RAISED, 
     overrelief=RIDGE
@@ -280,7 +278,7 @@ b_16 = Button(
     text="0", 
     width=10, 
     height=2, 
-    bg=cor4, 
+    bg=cinzenta, 
     font=('Ivy 13 bold'), 
     relief=RAISED, 
     overrelief=RIDGE
@@ -291,7 +289,7 @@ b_18 = Button(
     text=".", 
     width=3, 
     height=2, 
-    bg=cor4, 
+    bg=cinzenta, 
     font=('Ivy 13 bold'), 
     relief=RAISED, 
     overrelief=RIDGE
@@ -302,8 +300,8 @@ b_19 = Button(
     text="=", 
     width=3, 
     height=2, 
-    bg=cor2, 
-    fg=cor5, 
+    bg=branca, 
+    fg=laranja, 
     font=('Ivy 13 bold'), 
     relief=RAISED, 
     overrelief=RIDGE
